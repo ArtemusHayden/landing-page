@@ -1,0 +1,84 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #1f2937;
+    color: white;
+    padding-bottom: 250px;
+    justify-content: space-between;
+    flex: auto;
+    box-sizing: border-box;
+}
+
+.header-left {
+    padding-left: 300px;
+}
+
+ /* This is a mess, the padding does not shrink and I cannot figure it out. Will revist later before I lose my sanity.  */
+
+.header-right {
+    padding-right: 300px;
+}
+
+.header-left, .header-right{
+    flex-direction: column;
+    flex-basis: 500px;
+    margin-top: 16px;
+    gap: 16px;
+}
+
+ul {
+    list-style-type: none;
+    gap: 16px;
+    align-items: center;
+    justify-content: end;
+}
+
+ul,.header-left, .header-right, .header, .random-info, .info-cont {
+    display: flex;
+}
+
+.awesome {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+    margin-bottom: 16px;
+}
+
+.header-left .text {
+    font-size: 18px;
+    color: #e5e7eb
+}
+
+button {
+    background-color: #3882F6;
+    width: 125px;
+    height: 40px;
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+}
+
+img {
+    height: 300px;
+}
+
+.header-logo, ul {
+    margin-bottom: 100px;
+}
+
+.random-info {
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+}
+
+.info-cont {
+    flex-direction: row;
+}
