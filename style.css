@@ -5,6 +5,10 @@ html, body{
     padding: 0;
 }
 
+body{
+    flex-direction: column;
+}
+
 .header {
     background-color: #1f2937;
     color: white;
@@ -38,7 +42,8 @@ ul {
     justify-content: end;
 }
 
-ul,.header-left, .header-right, .header, .random-info, .info-cont {
+ul,.header-left, .header-right, .header, .random-info, .info-cont, .card, .quote, body, .quote p, .call-to-action, .call-to-action-right,
+.call-to-action-left, .footer {
     display: flex;
 }
 
@@ -54,7 +59,7 @@ ul,.header-left, .header-right, .header, .random-info, .info-cont {
     color: #e5e7eb
 }
 
-button {
+.header-button {
     background-color: #3882F6;
     width: 125px;
     height: 40px;
@@ -81,4 +86,89 @@ img {
 
 .info-cont {
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    flex-direction: column;
+    font-size: 18px;
+    color: #1f2937;
+    margin: 32px;
+    justify-content: space-between;
+}
+.card p {
+    text-align: center;
+}
+
+.card img {
+    border: 5px solid #3882F6;
+    border-radius: 10px;
+  }
+
+.quote {
+    background-color: #e5e7eb;
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.quote p {
+    max-width: 800px;
+}
+
+.call-to-action {
+    margin: auto;
+    max-width: 700px;
+    min-width: 700px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    background-color: #3882F6;
+    border-radius: 10px;
+    padding: 0 32px 0 32px;
+}
+.call-to-action-left {
+    flex-direction: column;
+    color: white;
+    gap: -10px;
+}
+.call-to-action-left h1 {
+    margin: 0;
+    padding: 16px 0 0 0;
+}
+
+.call-to-action-left p {
+    margin: 0;
+    padding: 0 0 16px 0;
+}
+
+.call-to-action-right{
+    margin-left: auto;
+}
+
+/* this css file feels very long */
+
+.action-button {
+    background-color: #3882F6;
+    width: 125px;
+    height: 40px;
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.footer {
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+}
+
+.footer p {
+    color: white;
 }
